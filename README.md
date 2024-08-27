@@ -25,22 +25,3 @@ Or
 ```bash
 npm run android
 ```
-
-
-## ScreenShots
-
-### Index Screen
-
-<div align='center'>
-<img style="width: 250px;" src="./screenshots/index.png">
-</div>
-
-### Login Screen Screen
-<div align='center'>
-<img style="width: 250px;" src="./screenshots/login.png">
-</div>
-
-### Register Screen
-<div align='center'>
-<img style="width: 250px;" src="./screenshots/reg.png">
-</div>
