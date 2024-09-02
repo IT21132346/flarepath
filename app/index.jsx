@@ -12,6 +12,7 @@ const Index = () => {
   const { setAuthenticated,setUser,user,isAuthenticated } = useAuth()
   const router=useRouter()
 
+
   
   useEffect(() => {
     
