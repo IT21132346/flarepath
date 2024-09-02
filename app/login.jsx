@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, TextInput, TouchableOpacity, ActivityIndicator } from 'react-native'
 import React from 'react'
 import { Link ,useRouter} from 'expo-router'
-import { auth } from '../utils/firebaseConfig'
+import { auth } from '../utils/firebaseConfig' 
 import {signInWithEmailAndPassword} from 'firebase/auth'
 
 import { useAuth } from '../context/authContext'
