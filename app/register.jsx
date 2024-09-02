@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth, db } from '../utils/firebaseConfig'
 import { doc, setDoc } from 'firebase/firestore'
 import { SafeAreaView } from 'react-native-safe-area-context'
-
+ 
 const Register = () => {
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
