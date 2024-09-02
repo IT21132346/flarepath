@@ -46,44 +46,43 @@ const UserHome = () => {
   
   
   return (
-
     <View className={`flex flex-col bg-gray-100 p-4`}>
 
-      <Drawer.Screen options={{
-        
-        
-        headerTitle: () => (
-          <View className={`flex flex-row items-center`}>
-            <Text className='font-bold text-2xl'>FLARE</Text>
-            <Text className='text-red-800 text-2xl font-bold ml-3'>PATH</Text>
-          </View>
-        )
-      }} />
-      <View className={`flex flex-row justify-between items-center border my-4 p-6`}>
-        <Text className={`text-xl`}>Current Tempearture</Text>
-        <Text className={`text-xl`}>32 c</Text>
+    <Drawer.Screen options={{
+      
+      
+      headerTitle: () => (
+        <View className={`flex flex-row items-center`}>
+          <Text className='font-bold text-2xl'>FLARE</Text>
+          <Text className='text-red-800 text-2xl font-bold ml-3'>PATH</Text>
+        </View>
+      )
+    }} />
+    <View className={`flex flex-row justify-between items-center border my-4 p-6`}>
+      <Text className={`text-xl`}>Current Tempearture</Text>
+      <Text className={`text-xl`}>32 c</Text>
+    </View>
+    <View className={`flex flex-row justify-between items-center border my-4 p-6`}>
+      <Text className={`text-xl`}>Current Location</Text>
+      <Text className={`text-xl`}>{ad}</Text>
+    </View>
+    <View className={`flex flex-col pt-4 space-y-4`}>
+      <View className={`flex flex-row justify-between items-center bg-white p-4 rounded-lg shadow-md`}>
+        <Text className={`text-xl font-bold`}>My Profile</Text>
+        <Text className={`font-bold text-blue-500`} onPress={() => {
+          router.push('profile')
+        }}>Go</Text>
       </View>
-      <View className={`flex flex-row justify-between items-center border my-4 p-6`}>
-        <Text className={`text-xl`}>Current Location</Text>
-        <Text className={`text-xl`}>{ad}</Text>
+      <View className={`flex flex-row justify-between items-center bg-white p-4 rounded-lg shadow-md`}>
+        <Text className={`text-xl font-bold`}>My Vehicles</Text>
+        <Text className={`font-bold text-blue-500`} onPress={()=>router.push('vehicals')}>Go</Text>
       </View>
-      <View className={`flex flex-col pt-4 space-y-4`}>
-        <View className={`flex flex-row justify-between items-center bg-white p-4 rounded-lg shadow-md`}>
-          <Text className={`text-xl font-bold`}>My Profile</Text>
-          <Text className={`font-bold text-blue-500`} onPress={() => {
-            router.push('profile')
-          }}>Go</Text>
-        </View>
-        <View className={`flex flex-row justify-between items-center bg-white p-4 rounded-lg shadow-md`}>
-          <Text className={`text-xl font-bold`}>My Vehicles</Text>
-          <Text className={`font-bold text-blue-500`} onPress={()=>router.push('vehicals')}>Go</Text>
-        </View>
-        <View className={`flex flex-row justify-between items-center bg-white p-4 rounded-lg shadow-md`}>
-          <Text className={`text-xl font-bold`}>Add Vehicle</Text>
-          <Text className={`font-bold text-blue-500`} onPress={()=>router.push('vehical-reg')}>Go</Text>
-        </View>
+      <View className={`flex flex-row justify-between items-center bg-white p-4 rounded-lg shadow-md`}>
+        <Text className={`text-xl font-bold`}>Add Vehicle</Text>
+        <Text className={`font-bold text-blue-500`} onPress={()=>router.push('vehical-reg')}>Go</Text>
       </View>
     </View>
+  </View>
 
   )
 }
